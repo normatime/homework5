@@ -120,7 +120,7 @@ public class Main {
 
                     System.out.println(" Переменная one большая.");
                 }
-
+                //
 
 
             }
