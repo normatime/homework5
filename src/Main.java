@@ -121,7 +121,7 @@ public class Main {
             System.out.println(" Наибольшее " + two);
      }else if (three > one && three > two){
             System.out.println(" Наибольшее " + three);
-        }
+        }//.
 
 
         }
