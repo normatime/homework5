@@ -5,7 +5,7 @@ public class Main {
 
         // task 1
 
-        int age = 18;
+        int age = 20;
 
         if (age >= 18) {
 
@@ -42,66 +42,66 @@ public class Main {
 
         //task 4
 
-        int agee = 4;
-        if (agee > 2 && agee < 6) {
-            System.out.println("Если возраст человека равен " + agee + " то ему нужно ходить в сад.");
+        int age2 = 4;
+        if (age2 >= 2 && age2 <= 6) {
+            System.out.println("Если возраст человека равен " + age2 + " то ему нужно ходить в сад.");
 
         }
-        agee = 10;
-        if (agee > 7 && agee < 17) {
+        age2 = 16;
+        if (age2 >= 7 && age2 <= 17) {
 
-            System.out.println("Если возраст человека равен " + agee + " то ему нужно ходить в школу. ");
+            System.out.println("Если возраст человека равен " + age2 + " то ему нужно ходить в школу. ");
         }
 
-        agee = 21;
-        if (agee > 18 && agee < 24) {
+        age2 = 21;
+        if (age2 >= 18 && age2 <= 24) {
 
-            System.out.println("Если возраст человека равен " + agee + " то ему нужно ходить в университет.");
+            System.out.println("Если возраст человека равен " + age2 + " то ему нужно ходить в университет.");
         }
 
-        agee = 25;
-        if (agee > 25) {
+        age2 = 25;
+        if (age2 > 24) {
 
-            System.out.println("Если возраст человека больше  " + agee + " то ему нужно ходить на работу.");
+            System.out.println("Если возраст человека больше  " + age2 + " то ему нужно ходить на работу.");
         }
 
 
         //   task 5
         int kid = 3;
-        if (kid < 5) {
+        if (kid <=5) {
 
             System.out.println("Если возраст ребёнка равен " + kid + " то ему нельзя кататься на аттракционе.");
 
             kid = 8;
-            if (kid > 5 && kid <= 14) {
+            if (kid >= 5 && kid <= 14) {
 
                 System.out.println("Если возраст ребёнка равен " + kid + " то ему можно кататься на аттракционе в сопровождении взрослых.");
 
                 kid = 15;
 
                 if (kid > 14) {
-                    System.out.println("Если ребёнок старше 14 лет, то он может кататься на аттракционе без сопровождения.");
+                    System.out.println("Если ребёнок старше " + kid +  ", то он может кататься на аттракционе без сопровождения.");
                 }
 
                 // task 6
 
-
+                String ticket744 = "sedentary ticket №744";  // как мне его использовать в коде? наставник, подскажи
                 int wagon = 102;
                 int sedentaryBusy = 60;
-                int standingBusy = 12;
-                if (sedentaryBusy > 60) {
-                    System.out.println("Все сидячие места заняты!");
-                } else {
-
+                int standingBusy = 72;
+                if (sedentaryBusy < 60) {
                     System.out.println("В вагоне ещё остались сидячие места.");
-                }
-                if (standingBusy > 42) {
+                } else {
 
-                    System.out.println("Вагон полный!");
+                    System.out.println("Все сидячие места заняты.");
+                }
+                if (standingBusy >=60 && standingBusy <102) {
+
+                    System.out.println("В вагоне ещё остались стоячие места.");
 
 
                 } else {
-                    System.out.println("В вагоне ещё остались стоячие места.");
+                    System.out.println("Вагон полный.");
 
 
                 }
@@ -109,18 +109,19 @@ public class Main {
 
                 //task 7
 
-                int one = 1;
-                int two = 2;
-                int three = 3;
-                if (one >= 3) {
-                    System.out.println("Это большее число.");
+                int one = 744;
+                int two = 624;
+                int three = 63;
+                if (one < two){
+                    System.out.println(" Переменная two большая.");
+                }else if (two < three) {
+                    System.out.println(" Переменная three большая.");
+                }else{
+
+                    System.out.println(" Переменная one большая.");
                 }
-                if (two >= 3) {
-                    System.out.println("Это большее число.");
-                }
-                if (three >= 3) {
-                    System.out.println("Это большее число.");
-                }
+                // если не верно, наставник, помогай, я не справляюсь...
+
 
             }
 
