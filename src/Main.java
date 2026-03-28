@@ -68,71 +68,69 @@ public class Main {
 
         //   task 5
         int kid = 3;
-        if (kid <=5) {
+        if (kid <= 5) {
 
             System.out.println("Если возраст ребёнка равен " + kid + " то ему нельзя кататься на аттракционе.");
+        }
+        kid = 8;
+        if (kid >= 5 && kid <= 14) {
 
-            kid = 8;
-            if (kid >= 5 && kid <= 14) {
+            System.out.println("Если возраст ребёнка равен " + kid + " то ему можно кататься на аттракционе в сопровождении взрослых.");
+        }
+        kid = 15;
 
-                System.out.println("Если возраст ребёнка равен " + kid + " то ему можно кататься на аттракционе в сопровождении взрослых.");
+        if (kid > 14) {
+            System.out.println("Если ребёнок старше " + kid + ", то он может кататься на аттракционе без сопровождения.");
+        }
 
-                kid = 15;
+        // task 6
 
-                if (kid > 14) {
-                    System.out.println("Если ребёнок старше " + kid +  ", то он может кататься на аттракционе без сопровождения.");
-                }
+        String ticket744 = "sedentary ticket №744";  // как мне его использовать в коде? наставник, подскажи
+        int wagon = 102;
+        int sedentaryBusy = 60;
+        int standingBusy = 72;
+        if (sedentaryBusy < 60) {
+            System.out.println("В вагоне ещё остались сидячие места.");
+        } else {
 
-                // task 6
+            System.out.println("Все сидячие места заняты.");
+        }
+        if (standingBusy >= 60 && standingBusy < 102) {
 
-                String ticket744 = "sedentary ticket №744";  // как мне его использовать в коде? наставник, подскажи
-                int wagon = 102;
-                int sedentaryBusy = 60;
-                int standingBusy = 72;
-                if (sedentaryBusy < 60) {
-                    System.out.println("В вагоне ещё остались сидячие места.");
-                } else {
-
-                    System.out.println("Все сидячие места заняты.");
-                }
-                if (standingBusy >=60 && standingBusy <102) {
-
-                    System.out.println("В вагоне ещё остались стоячие места.");
-
-
-                } else {
-                    System.out.println("Вагон полный.");
+            System.out.println("В вагоне ещё остались стоячие места.");
 
 
-                }
-
-
-                //task 7
-
-                int one = 744;
-                int two = 624;
-                int three = 63;
-                if (one < two){
-                    System.out.println(" Переменная two большая.");
-                }else if (two < three) {
-                    System.out.println(" Переменная three большая.");
-                }else{
-
-                    System.out.println(" Переменная one большая.");
-                }
-                // если не верно, наставник, помогай, я не справляюсь...
-
-
-            }
+        } else {
+            System.out.println("Вагон полный.");
 
 
         }
 
 
+        //task 7
+
+        int one = 744;
+        int two = 624;
+        int three = 63;
+        if (one > two && one > three) {
+            System.out.println("наибольшее " + one);
+
+
+            }
+     else if (two > three && two > one) {
+            System.out.println(" Наибольшее " + two);
+     }else if (three > one && three > two){
+            System.out.println(" Наибольшее " + three);
+        }
+
+
+        }
     }
 
 
-}
+
+
+
 
 
 
